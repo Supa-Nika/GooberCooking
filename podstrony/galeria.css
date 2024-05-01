@@ -1,0 +1,138 @@
+
+.title{
+    width: calc(50vw + 15px);
+    background-color: #16850b;
+    padding: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px black;
+    border: #006f00 3px solid;
+    color: white;
+}
+
+footer{
+    position: relative;
+    top: 25px;
+}
+
+main div a img{
+    animation: rot 20s infinite linear
+}
+main article div a:nth-of-type(1) img{
+    animation-delay:  0s; 
+}
+main article div a:nth-of-type(2) img{
+    animation-delay: 2.5s; 
+}
+main article div a:nth-of-type(3) img{
+    animation-delay: 5s; 
+}
+main article div a:nth-of-type(4) img{
+    animation-delay: 7.5s; 
+}
+main article div a:nth-of-type(5) img{
+    animation-delay: 10s; 
+}
+main article div a:nth-of-type(6) img{
+    animation-delay: 12.5s; 
+}
+main article div a:nth-of-type(7) img{
+    animation-delay: 15s; 
+}
+main article div a:nth-of-type(8) img{
+    animation-delay: 17.5s; 
+}
+
+.head{
+    font-size: xx-large;
+}
+
+main article div a img{
+    position: absolute;
+    left: -350px;
+    border-radius: 15px; 
+    margin: 10px;
+    width: 15vw;
+    height: 15vw;
+    min-width: 150px;
+    min-height: 150px;
+    border: #003000 3px solid;
+    z-index: 20;
+}
+
+div.img{
+    position: relative;
+}
+
+main{
+    width: 99.2vw;
+    height: fit-content;
+    overflow-x: clip;
+}
+
+
+
+@keyframes rot {
+    0%{
+        position: absolute;
+        left: -350px;
+        z-index: 1;
+    }
+    50%{
+        transform: perspective(2500px) translateZ(0px);
+        position: absolute;
+        left: 100vw;
+        z-index: 1;
+    }
+    51%{
+        transform: perspective(2500px) translateZ(-2000px);
+        z-index: -1;
+    }
+    100%{
+        transform: perspective(2500px) translateZ(-2000px);
+        position: absolute;
+        left: -1000px;
+        z-index: -1;
+    }
+}
+
+article{
+    margin-bottom: 400px;
+}
+
+
+p{
+    font-variant: small-caps;
+}
+
+.article_head{
+    padding: 10px;
+    width: 25vw;
+    background-color: #16850b;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px black;
+    border: #006f00 3px solid;
+}
+
+article div p{
+    color: white;
+    font-size: x-large;
+}
+
+@media only screen and (max-width: 600px) {
+    .article_head{
+        width: 75vw;
+    }
+    .title{
+        width: 90vw;
+    }
+}
