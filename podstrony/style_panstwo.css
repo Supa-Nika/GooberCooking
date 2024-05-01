@@ -1,0 +1,238 @@
+.panstwo{
+    width: calc(50vw + 15px);
+    background-color: #16850b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px black;
+    border: #006f00 3px solid;
+}
+
+.panstwo img{
+    width: 10vw;
+    min-width: 100px;
+    min-height: 100px;
+    margin: 5px;
+    border: #006f00 3px solid;
+    filter: saturate(125%);
+    border-radius: 15%;
+}
+
+.panstwo p {
+    font-size: 35px;
+    text-shadow: black 1px 1px 2px;
+    color: white;
+    margin-right: 1vw;
+    margin-left: 15px;
+    font-variant: small-caps;
+}
+
+.spis{
+    background-color: #16850b;
+    border-radius: 25px;
+    width: 30%;
+    padding: 5px;
+    border: #006f00 3px solid;
+    box-shadow: 5px 5px 5px black;
+}
+
+.spis ul li{
+    list-style-type: disc;
+    margin: 10px;
+}
+.spis ul li::marker{
+    color: white;
+}
+
+p.spis_head{
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    font-variant: small-caps;
+}
+
+@media only screen and (max-width: 750px) {
+    .spis{
+        width: 90vw;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .spis ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .danie_header{
+        width: 75vw !important;
+    }
+
+    .panstwo{
+        width: 75vw !important;
+        margin-bottom: 60px;
+    }
+
+    .instrukcje{
+        margin-right: auto !important;
+        width: 75% !important;
+    }
+
+}
+
+.danie_header{
+    width: calc(35vw + 15px);
+    background-color: #16850b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    padding: 25px;
+    border: #006f00 3px solid;
+    margin-top: 55px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px black;
+    
+}
+
+.danie_header img{
+    width: 7vw;
+    min-width: 75px;
+    min-height: 75px;
+    margin: 5px;
+    border: #006f00 3px solid;
+    filter: saturate(125%);
+    border-radius: 15%;
+}
+
+.danie_header p {
+    font-size: 25px;
+    text-shadow: black 1px 1px 2px;
+    color: white;
+    margin-right: 1vw;
+    margin-left: 15px;
+    
+}
+
+
+
+.skladniki{
+    width: 50%;
+    background-color: #16850b;
+    border-radius: 25px;
+    padding: 5px;
+    border: #006f00 3px solid;
+    float: left;
+    box-shadow: 5px 5px 5px black;
+    
+}
+
+.skladniki ul li{
+    list-style-type: disc;
+    margin: 10px;
+    color: white;
+}
+.skladniki ul li::marker{
+    color: white;
+    
+}
+
+.skladniki_head{
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    font-variant: small-caps;
+}
+
+img.show{
+    float: right;
+    width: 25vw;
+    max-width: 400px;
+    min-width: 150px;
+    margin: 10px;
+    border: #006f00 3px solid;
+    border-radius: 15%;
+}
+
+@media only screen and (max-width: 385px) {
+    img.show{
+        max-width: none;
+        width: 75vw;
+        float: none;
+        clear: both;
+    }
+
+    article{
+        text-align: center;
+    }
+
+    article p{
+        text-align: left;
+    }
+
+    .skladniki{
+        width: 75vw;
+        float: none;
+        clear: both;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
+
+
+article{
+    clear: both;
+    margin-bottom: 25px;
+}
+
+.instrukcje{
+    width: 50%;
+    background-color: #16850b;
+    border-radius: 25px;
+    padding: 5px;
+    border: #006f00 3px solid;
+    clear: both;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 15px;
+    
+    box-shadow: 5px 5px 5px black;
+    transform: translateY(15px);
+}
+
+
+.instrukcje ol li{
+    list-style-type: decimal;
+    margin: 10px;
+    color: white;
+    text-align: justify;
+}
+
+.instrukcje ol li::marker{
+    font-weight: bold;
+    font-size: large;
+}
+
+footer{
+    position: relative;
+    top: 25px;
+}
+
+.spis ul li a{
+    transition: font-size 0.5s;
+}
+
+.spis ul li a:hover{
+    font-size: large;
+}
